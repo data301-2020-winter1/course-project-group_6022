@@ -19,9 +19,9 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 - Person 1: one sentence about you!
 - Person 2: one sentence about you!
-- Matthew Kuelker: 'I love all things music and I'm a CS major who's probably addequate at coding."
+- Matthew Kuelker: 'I love all things music and I'm a CS major who's probably adequate at coding."
 
 ## References
-https://www.who.int/health-topics/coronavirus#tab=tab_1
-https://open.toronto.ca/dataset/covid-19-cases-in-toronto/
-https://www.kaggle.com/divyansh22/toronto-covid19-cases
+https://www.who.int/health-topics/coronavirus#tab=tab_1 <br>
+https://open.toronto.ca/dataset/covid-19-cases-in-toronto/ <br>
+https://www.kaggle.com/divyansh22/toronto-covid19-cases <br>
