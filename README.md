@@ -9,7 +9,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Describe your topic/interest in about 150-200 words
 
-{Add your stuff here}
+2020 marked the beginning of a very difficult and unprecedented time when the Coronavirus disease overtook the globe and changed countless lives forever. Coronavirus disease, or COVID-19, is an “infectious disease caused by a newly discovered coronavirus” (WHO, 2020). The virus causes those infected “mild to moderate respiratory illness” (WHO, 2020); The majority of people diagnosed can recover without special treatment, although it is more likely for vulnerable populations to be predisposed to more severe symptoms. Those in the vulnerable category include the elderly and those with underlying medical conditions eg: “cardiovascular disease, diabetes, chronic respiratory disease, and cancer,” (WHO, 2020). In Canada, the province with the second highest amount of confirmed COVID-19 cases is Ontario, and one of the hardest hit cities in Ontario is Toronto. Given the global state of cases, it is the public’s right to know of the severity of the pandemic and the toll its taken on densely populated Toronto.
 
 ## Describe your dataset in about 150-200 words
 
