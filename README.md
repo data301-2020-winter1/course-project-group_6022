@@ -18,7 +18,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 ## Team Members
 
 - Person 1: one sentence about you!
-- Jonathan Chou: I am 3rd year Computer Science major currently living in Vancouver, my hometown. Although I was born and raised here, I attended high school in Taiwan, where my parents are from.
+- Jonathan Chou: I am a 3rd year Computer Science major currently living in Vancouver, my hometown. Although I was born and raised here, I attended high school in Taiwan, where my parents are from.
 - Matthew Kuelker: 'I love all things music and I'm a CS major who's probably adequate at coding."
 
 ## References
