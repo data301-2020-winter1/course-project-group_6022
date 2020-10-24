@@ -15,7 +15,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 Our data set contains all demographic, geographic, and information pertaining to the severity of confirmed and probable COVID-19 cases reported and managed by Toronto Public Health. This data set is accurate, robust and was extracted from the provincial communicable disease reporting system (IPHIS) and Toronto’s COVID-19 case management system (CORES). Both sources have been combined for reporting this particular set.  
 
-####Columns Breakdown:
+#### Columns Breakdown:
 	
 ##### Identifiers and Location
 *(Columns: ID, Neighbourhood Name, FSA, Classification)*
