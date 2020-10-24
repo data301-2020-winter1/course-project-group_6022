@@ -17,23 +17,23 @@ Our data set contains all demographic, geographic, and information pertaining to
 	
 ##### Identifiers and Location
 *(Columns: ID, Neighbourhood Name, FSA, Classification)*
-These columns communicate an individual ID, and names and Forward Sortation Areas (Postal) codes, which is of immense importance for epidemiologists. It also allows us to hypothetically transform our data and build a heatmap based on locations. 
+<br>These columns communicate an individual ID, and names and Forward Sortation Areas (Postal) codes, which is of immense importance for epidemiologists. It also allows us to hypothetically transform our data and build a heatmap based on locations. 
 
 ##### Information on Spread and transmission. 
 *(Columns: Outbreak Associated, Source of infection)*
-	These columns allow us to view if individual cases are related to a pandemic outbreak, and, if not, how exactly the virus was transmitted.
+	<br>These columns allow us to view if individual cases are related to a pandemic outbreak, and, if not, how exactly the virus was transmitted.
 
 ##### Chronological Dating
 *(Columns: Outbreak Associated, Source of infection)*
-	These columns provide observations for the episode date and the reported date. It should be noted that the earliest chronological observation in the data set is January 21st, 2020 while the latest observation is September 13th, 2020. 
+	<br>These columns provide observations for the episode date and the reported date. It should be noted that the earliest chronological observation in the data set is January 21st, 2020 while the latest observation is September 13th, 2020. 
 
 ##### Demographics
 *(Columns: Age, Gender)* 
-	Allows us to view and identify relationships between demographics with the highest and lowest infection count. 
+	<br>Allows us to view and identify relationships between demographics with the highest and lowest infection count. 
 
 ##### Outcomes
 *(Columns: Outcome, Currently Hospitalized, Currently in ICU, Currently Intubated, Ever Hospitalized, Ever in ICU, Ever Intubated)*
-	Columns provide observations for the following outcomes and specifics of those who contracted the virus. 
+	<br>Columns provide observations for the following outcomes and specifics of those who contracted the virus. 
 
 
 ## Team Members
