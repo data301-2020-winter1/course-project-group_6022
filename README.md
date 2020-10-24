@@ -13,26 +13,26 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 Our data set contains all demographic, geographic, and information pertaining to the severity of confirmed and probable COVID-19 cases reported and managed by Toronto Public Health. This data set is accurate, robust and was extracted from the provincial communicable disease reporting system (IPHIS) and Toronto’s COVID-19 case management system (CORES). Both sources have been combined for reporting this particular set.  
 
-#### Columns Breakdown:
+### Columns Breakdown:
 	
-##### Identifiers and Location
-*(Columns: ID, Neighbourhood Name, FSA, Classification)*
+**Identifiers and Location**
+<br>*(Columns: ID, Neighbourhood Name, FSA, Classification)*
 <br>These columns communicate an individual ID, and names and Forward Sortation Areas (Postal) codes, which is of immense importance for epidemiologists. It also allows us to hypothetically transform our data and build a heatmap based on locations. 
 
-##### Information on Spread and transmission. 
-*(Columns: Outbreak Associated, Source of infection)*
+**Information on Spread and transmission** 
+<br>*(Columns: Outbreak Associated, Source of infection)*
 	<br>These columns allow us to view if individual cases are related to a pandemic outbreak, and, if not, how exactly the virus was transmitted.
 
-##### Chronological Dating
-*(Columns: Outbreak Associated, Source of infection)*
+**Chronological Dating**
+<br>*(Columns: Outbreak Associated, Source of infection)*
 	<br>These columns provide observations for the episode date and the reported date. It should be noted that the earliest chronological observation in the data set is January 21st, 2020 while the latest observation is September 13th, 2020. 
 
-##### Demographics
-*(Columns: Age, Gender)* 
+**Demographics**
+<br>*(Columns: Age, Gender)* 
 	<br>Allows us to view and identify relationships between demographics with the highest and lowest infection count. 
 
-##### Outcomes
-*(Columns: Outcome, Currently Hospitalized, Currently in ICU, Currently Intubated, Ever Hospitalized, Ever in ICU, Ever Intubated)*
+**Outcomes**
+<br>*(Columns: Outcome, Currently Hospitalized, Currently in ICU, Currently Intubated, Ever Hospitalized, Ever in ICU, Ever Intubated)*
 	<br>Columns provide observations for the following outcomes and specifics of those who contracted the virus. 
 
 
