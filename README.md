@@ -19,7 +19,7 @@ Our data set contains all demographic, geographic, and information pertaining to
 <br>*(Columns: ID, Neighbourhood Name, FSA, Classification)*
 <br>These columns communicate an individual ID, and names and Forward Sortation Areas (Postal) codes, which is of immense importance for epidemiologists. It also allows us to hypothetically transform our data and build a heatmap based on locations. 
 
-##### Information on Spread and transmission. 
+**Information on Spread and transmission** 
 <br>*(Columns: Outbreak Associated, Source of infection)*
 	<br>These columns allow us to view if individual cases are related to a pandemic outbreak, and, if not, how exactly the virus was transmitted.
 
