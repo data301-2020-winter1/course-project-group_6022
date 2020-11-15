@@ -1,3 +1,2 @@
-
-
-![image of me]('C:\\Users\\matta\\Documents\\UBCO 20-21\\Data 301\\course-project-group_6022\\analysis\\Matthew\\output.png') 
+This is Matt Kuelkers Section of the Analysis. Abadon all hope ye who enter here... 
+For beyond this readme lies only spaghetti code and and exorbitant number of barcharts
