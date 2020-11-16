@@ -22,15 +22,14 @@ def load_and_process(url_or_path_to_csv_file):
     
     return df2
 
-def simplify(df): 
+def simplify(df): #don't run this if your going to run date and time.
     df = df.drop(['Outbreak Associated', 'Neighbourhood Name', 'FSA', 'Outcome' , 'Currently Hospitalized', 'Currently in ICU', 'Currently Intubated' ],axis = 1)
     df.columns = ['Age_Group', 'Source_of_Infection', 'Episode_Date' , 'Reported_Date' , 'Gender', 'Outcome' , 'Ever_Hospitalized', 'Ever_in_ICU']
+    df["Age_Group"] = df["Age_Group"].replace('19 and younger', "<19") 
     return df
 
 def add_date_time(df):
-    """ 
-    WARNING: THIS REQUIRES DATASET TO RUN SIMPLIFY FIRST
-    """
+    df = simplify(df)
     df['Dt_Format'] = pd.to_datetime(df.Reported_Date)
     df['Dt_Format'] = df.Dt_Format.dt.date
     df['Days_Since'] = (df['Dt_Format'][0:] - min(df['Dt_Format'])) 
@@ -39,4 +38,4 @@ def add_date_time(df):
     return df
 
 def ez_format(path): #To groupmates.... Just use this. Nothing breaks if you use this. 
-    return add_date_time(simplify(load_and_process(path)))
+    return add_date_time(load_and_process(path))
