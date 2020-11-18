@@ -38,7 +38,7 @@ Our data set contains all demographic, geographic, and information pertaining to
 
 ## Team Members
 
-- Hannah Willoner: I'm in my final year of study at UBCO, majoring in Anthropology. I'm looking forward to completing my degree and exploring places outside the Okanagan where I was born and raised and seeing more of this beautiful country.
+- Hannah Willoner: I'm in my final year of study at UBCO, majoring in Anthropology. I'm looking forward to completing my degree and exploring places outside the Okanagan where I was born and raised and seeing more of this beautiful country. *Hannah has dropped the course and is no longer active in this project*
 - Jonathan Chou: I am a 3rd year Computer Science major currently living in Vancouver, my hometown. Although I was born and raised here, I attended high school in Taiwan, where my parents are from.
 - Matthew Kuelker: I love all things music and I'm a 2nd year CS major who's probably adequate at coding. 
 
