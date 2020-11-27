@@ -39,3 +39,9 @@ def add_date_time(df):
 
 def ez_format(path): #To groupmates.... Just use this. Nothing breaks if you use this. 
     return add_date_time(load_and_process(path))
+
+def incubation_time(df): #synthesizes two given dates into a more usable "incubation period"
+    df["Incubation Time"] = pd.to_datetime(df["Reported Date"]) - pd.to_datetime(df["Episode Date"])
+    df = df.drop("Episode Date", axis=1)
+    df = df.drop("Reported Date", axis=1)
+    return df

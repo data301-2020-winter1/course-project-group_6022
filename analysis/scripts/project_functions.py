@@ -39,3 +39,6 @@ def add_date_time(df):
 
 def ez_format(path): #To groupmates.... Just use this. Nothing breaks if you use this. 
     return add_date_time(load_and_process(path))
+
+#def location(df): #convert districts to longitude/latitude (WIP)
+    
