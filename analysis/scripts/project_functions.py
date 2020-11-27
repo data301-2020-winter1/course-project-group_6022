@@ -6,7 +6,8 @@ def load_and_process(url_or_path_to_csv_file):
     df1 = (
         #Rename and sort by Episode date, reported date, and then age group.
         pd.read_csv(url_or_path_to_csv_file)
-        .rename(columns={"Client Gender" : "Sex"})
+        .rename(columns={"Client Gender" : "Gender"})
+        
         .sort_values(['Episode Date','Reported Date',"Age Group"], ascending = [1,1,1])
     )
 
@@ -36,6 +37,20 @@ def add_date_time(df):
     df['Days_Since'] = df['Days_Since'].dt.days
     df = df.drop(["Dt_Format"],axis = 1)
     return df
+
+def add_date_time_no_format(df):
+    df = df.rename(columns={"Reported Date" : "Reported_Date"})
+    df['Dt_Format'] = pd.to_datetime(df.Reported_Date)
+    df['Dt_Format'] = df.Dt_Format.dt.date
+    df['Days Since'] = (df['Dt_Format'][0:] - min(df['Dt_Format'])) 
+    df['Days Since'] = df['Days Since'].dt.days
+    df = df.drop(["Dt_Format"],axis = 1)
+    df = df.rename(columns={"Reported_Date" : "Reported Date"})
+    return df
+
+def format_and_save_csv(url_or_path_to_csv_file,dest):
+    df = add_date_time_no_format(load_and_process(url_or_path_to_csv_file))
+    df.to_csv(dest, index = False )
 
 def ez_format(path): #To groupmates.... Just use this. Nothing breaks if you use this. 
     return add_date_time(load_and_process(path))
