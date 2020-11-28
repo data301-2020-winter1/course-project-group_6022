@@ -24,6 +24,25 @@ def load_and_process(curr_dir):
     
     return df2
 
+def load_and_process_direct_path(curr_dir): #our tableau format breaks if we use the updated method. 
+    df1 = (
+        #Rename and sort by Episode date, reported date, and then age group.
+        pd.read_csv(curr_dir)
+        .rename(columns={"Client Gender" : "Gender"})
+        .sort_values(['Episode Date','Reported Date',"Age Group"], ascending = [1,1,1])
+    )
+
+    df2 = (
+        #Drop NA, _id, and rows that do not have confirmed as a case
+        df1
+        .dropna()
+        .drop('_id', axis = 1)
+        .loc[df1["Classification"].str.contains("CONFIRMED")]
+        .drop('Classification', axis = 1) #We don't need this column anymore, since we are working soley with confirmed cases.
+        .reset_index(drop = True)   
+    )
+    return df2
+
 def autopath(curr_dir):
     path = (os.getcwd()
         .replace(curr_dir,"")
@@ -56,8 +75,8 @@ def add_date_time_no_format(df):
     df = df.rename(columns={"Reported_Date" : "Reported Date"})
     return df
 
-def format_and_save_csv(url_or_path_to_csv_file,dest):
-    df = add_date_time_no_format(load_and_process(url_or_path_to_csv_file))
+def format_tableau_save_csv(url_or_path_to_csv_file,dest):
+    df = add_date_time_no_format(load_and_process_direct_path(url_or_path_to_csv_file))
     df.to_csv(dest, index = False )
 
 def ez_format(path): #To groupmates.... Just use this. Nothing breaks if you use this. 
