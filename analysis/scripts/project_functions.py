@@ -1,11 +1,12 @@
 import pandas as pd
 import numpy as np
+import os
 
-def load_and_process(url_or_path_to_csv_file):
-
+def load_and_process(curr_dir):
+    path = autopath(curr_dir)
     df1 = (
         #Rename and sort by Episode date, reported date, and then age group.
-        pd.read_csv(url_or_path_to_csv_file)
+        pd.read_csv(path)
         .rename(columns={"Client Gender" : "Gender"})
         
         .sort_values(['Episode Date','Reported Date',"Age Group"], ascending = [1,1,1])
@@ -23,6 +24,13 @@ def load_and_process(url_or_path_to_csv_file):
     
     return df2
 
+def autopath(curr_dir):
+    path = (os.getcwd()
+        .replace(curr_dir,"")
+    )
+    path = path+"\\data\\raw\\COVID19 cases Toronto.csv"
+    return path
+        
 def simplify(df): #don't run this if your going to run date and time.
     df = df.drop(['Outbreak Associated', 'Neighbourhood Name', 'FSA', 'Outcome' , 'Currently Hospitalized', 'Currently in ICU', 'Currently Intubated' ],axis = 1)
     df.columns = ['Age_Group', 'Source_of_Infection', 'Episode_Date' , 'Reported_Date' , 'Gender', 'Outcome' , 'Ever_Hospitalized', 'Ever_in_ICU']
@@ -56,4 +64,3 @@ def ez_format(path): #To groupmates.... Just use this. Nothing breaks if you use
     return add_date_time(load_and_process(path))
 
 #def location(df): #convert districts to longitude/latitude (WIP)
-    
